@@ -1,0 +1,525 @@
+[kbplacer_plugin_action.py:65]: Plugin version: 0.13
+[kbplacer_plugin_action.py:66]: Python version: '3.11.5 (main, Jan 27 2025, 07:08:36) [MSC v.1942 64 bit (AMD64)]'
+[kbplacer_plugin_action.py:67]: KiCad version: 9.0.1 with 4.2.2 msw (phoenix) wxWidgets 3.2.6
+[kbplacer_dialog.py:586]: Language: en
+[kbplacer_plugin_action.py:75]: GUI state: {"layout_path": "C:\\Users\\sambu\\Downloads\\tkl-40(1)(2)(1).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "SW{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": true, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 3.03, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+[key_placer.py:362]: Set key 1U distance: 19050000/19050000
+[key_placer.py:124]: Switches by nets: defaultdict(<class 'list'>, {frozenset({'COL11', 'ROW4'}): ['SW57_1', 'SW57'], frozenset({'COL10', 'ROW4'}): ['SW56_1', 'SW56'], frozenset({'COL9', 'ROW4'}): ['SW55'], frozenset({'ROW4', 'COL7'}): ['SW54'], frozenset({'COL6', 'ROW4'}): ['SW53'], frozenset({'ROW4', 'COL5'}): ['SW52'], frozenset({'COL3', 'ROW4'}): ['SW51'], frozenset({'COL2', 'ROW4'}): ['SW50'], frozenset({'COL1', 'ROW4'}): ['SW49'], frozenset({'ROW4', 'COL0'}): ['SW48_1', 'SW48'], frozenset({'COL11', 'ROW3'}): ['SW47_1', 'SW47'], frozenset({'COL10', 'ROW3'}): ['SW46'], frozenset({'COL9', 'ROW3'}): ['SW45'], frozenset({'COL8', 'ROW3'}): ['SW44'], frozenset({'ROW3', 'COL7'}): ['SW43'], frozenset({'COL6', 'ROW3'}): ['SW42'], frozenset({'ROW3', 'COL5'}): ['SW41'], frozenset({'COL4', 'ROW3'}): ['SW40'], frozenset({'COL3', 'ROW3'}): ['SW39'], frozenset({'COL2', 'ROW3'}): ['SW38'], frozenset({'ROW3', 'COL1'}): ['SW37'], frozenset({'ROW3', 'COL0'}): ['SW36_1', 'SW36'], frozenset({'COL11', 'ROW2'}): ['SW35_2', 'SW35_1', 'SW35'], frozenset({'COL10', 'ROW2'}): ['SW34'], frozenset({'COL9', 'ROW2'}): ['SW33'], frozenset({'COL8', 'ROW2'}): ['SW32'], frozenset({'ROW2', 'COL7'}): ['SW31'], frozenset({'COL6', 'ROW2'}): ['SW30'], frozenset({'ROW2', 'COL5'}): ['SW29'], frozenset({'COL4', 'ROW2'}): ['SW28'], frozenset({'COL3', 'ROW2'}): ['SW27'], frozenset({'COL2', 'ROW2'}): ['SW26'], frozenset({'ROW2', 'COL1'}): ['SW25'], frozenset({'ROW2', 'COL0'}): ['SW24_1', 'SW24'], frozenset({'COL11', 'ROW1'}): ['SW23'], frozenset({'COL10', 'ROW1'}): ['SW22'], frozenset({'COL9', 'ROW1'}): ['SW21'], frozenset({'COL8', 'ROW1'}): ['SW20'], frozenset({'COL7', 'ROW1'}): ['SW19'], frozenset({'COL6', 'ROW1'}): ['SW18'], frozenset({'COL5', 'ROW1'}): ['SW17'], frozenset({'COL4', 'ROW1'}): ['SW16'], frozenset({'COL3', 'ROW1'}): ['SW15'], frozenset({'COL2', 'ROW1'}): ['SW14'], frozenset({'COL1', 'ROW1'}): ['SW13'], frozenset({'COL0', 'ROW1'}): ['SW12'], frozenset({'ROW0', 'COL11'}): ['SW11'], frozenset({'ROW0', 'COL10'}): ['SW10'], frozenset({'ROW0', 'COL9'}): ['SW9'], frozenset({'ROW0', 'COL8'}): ['SW8'], frozenset({'ROW0', 'COL7'}): ['SW7'], frozenset({'ROW0', 'COL6'}): ['SW6'], frozenset({'ROW0', 'COL5'}): ['SW5'], frozenset({'ROW0', 'COL3'}): ['SW4'], frozenset({'ROW0', 'COL2'}): ['SW3'], frozenset({'ROW0', 'COL1'}): ['SW2'], frozenset({'ROW0', 'COL0'}): ['SW1']})
+[key_placer.py:128]: Diodes by switch: {'SW57_1': ['D57'], 'SW57': ['D57'], 'SW56_1': ['D56'], 'SW56': ['D56'], 'SW55': ['D55'], 'SW54': ['D54'], 'SW53': ['D53'], 'SW52': ['D52'], 'SW51': ['D51'], 'SW50': ['D50'], 'SW49': ['D49'], 'SW48_1': ['D48'], 'SW48': ['D48'], 'SW47_1': ['D47'], 'SW47': ['D47'], 'SW46': ['D46'], 'SW45': ['D45'], 'SW44': ['D44'], 'SW43': ['D43'], 'SW42': ['D42'], 'SW41': ['D41'], 'SW40': ['D40'], 'SW39': ['D39'], 'SW38': ['D38'], 'SW37': ['D37'], 'SW36_1': ['D36'], 'SW36': ['D36'], 'SW35_2': ['D35'], 'SW35_1': ['D35'], 'SW35': ['D35'], 'SW34': ['D34'], 'SW33': ['D33'], 'SW32': ['D32'], 'SW31': ['D31'], 'SW30': ['D30'], 'SW29': ['D29'], 'SW28': ['D28'], 'SW27': ['D27'], 'SW26': ['D26'], 'SW25': ['D25'], 'SW24_1': ['D24'], 'SW24': ['D24'], 'SW23': ['D23'], 'SW22': ['D22'], 'SW21': ['D21'], 'SW20': ['D20'], 'SW19': ['D19'], 'SW18': ['D18'], 'SW17': ['D17'], 'SW16': ['D16'], 'SW15': ['D15'], 'SW14': ['D14'], 'SW13': ['D13'], 'SW12': ['D12'], 'SW11': ['D11'], 'SW10': ['D10'], 'SW9': ['D9'], 'SW8': ['D8'], 'SW7': ['D7'], 'SW6': ['D6'], 'SW5': ['D5'], 'SW4': ['D4'], 'SW3': ['D3'], 'SW2': ['D2'], 'SW1': ['D1']}
+[kle_serial.py:897]: User layout: [{'name': 'TKL 40'}, [{'c': '#777777'}, '0,0', {'x': 0.5, 'c': '#cccccc'}, '0,1', '0,2', '0,3', {'x': 0.5}, '0,5', '0,6', '0,7', {'x': 0.5}, '0,8', '0,9', '0,10', {'x': 0.5}, '0,11'], [{'y': 0.25, 'c': '#aaaaaa', 'w': 1.5}, '1,0', {'c': '#cccccc'}, '1,1', '1,2', '1,3', '1,4', '1,5', '1,6', '1,7', '1,8', '1,9', '1,10', {'c': '#aaaaaa', 'w': 1.5}, '1,11\n\n\n1,0', {'x': 3.5, 'c': '#cccccc', 'w': 1.25, 'h': 2, 'w2': 1.5, 'h2': 1, 'x2': -0.25}, '2,11\n\n\n1,1', {'x': 1, 'w': 1.5}, '1,11\n\n\n1,2'], [{'c': '#aaaaaa', 'w': 1.75}, '2,0\n\n\n0,0', {'c': '#cccccc'}, '2,1', '2,2', '2,3', '2,4', '2,5', '2,6', '2,7', '2,8', '2,9', '2,10\n\n\n1,0', {'c': '#aaaaaa', 'w': 1.25}, '2,11\n\n\n1,0', {'x': 0.25, 'c': '#cccccc', 'w': 1.25, 'w2': 1.75, 'l': True}, '2,0\n\n\n0,1', {'x': 1}, '2,10\n\n\n1,1', {'x': 1.5, 'w': 2.25}, '2,11\n\n\n1,2'], [{'c': '#aaaaaa', 'w': 1.25}, '3,0\n\n\n2,0', {'c': '#cccccc'}, '3,1\n\n\n2,0', '3,2', '3,3', '3,4', '3,5', '3,6', '3,7', '3,8', '3,9', '3,10\n\n\n3,0', {'c': '#aaaaaa', 'w': 1.75}, '3,11\n\n\n3,0'], [{'w': 1.5}, '4,0\n\n\n4,0', {'c': '#cccccc', 'w': 1.5}, '4,1\n\n\n4,0', '4,3\n\n\n5,0', {'w': 2.75}, '4,5\n\n\n5,0', {'w': 2.25}, '4,7\n\n\n5,0', '4,9\n\n\n5,0', {'w': 1.5}, '4,10\n\n\n4,0', {'c': '#aaaaaa', 'w': 1.5}, '4,11\n\n\n4,0'], [{'y': 0.25, 'c': '#cccccc', 'w': 2.25}, '3,0\n\n\n2,1', {'x': 8, 'w': 2.75}, '3,11\n\n\n3,1'], [{'y': 0.25, 'w': 1.25}, '4,0\n\n\n4,1', {'x': 0.75}, '4,2\n\n\n4,1', {'w': 7}, '4,6\n\n\n5,1', '4,10\n\n\n4,1', {'x': 0.75, 'w': 1.25}, '4,11\n\n\n4,1']]
+[key_placer.py:989]: Detected layout convertible to matrix annotated keyboard
+[key_placer.py:301]: Got ['SW1'] for ('0', '0') position
+[key_placer.py:662]: Layout offset: (28575000, 28575000)
+[key_placer.py:301]: Got ['SW1'] for ('0', '0') position
+[board_modifier.py:85]: Setting SW1 footprint position: (38100000, 38100000)
+[key_placer.py:301]: Got ['SW2'] for ('0', '1') position
+[board_modifier.py:85]: Setting SW2 footprint position: (66675000, 38100000)
+[key_placer.py:301]: Got ['SW3'] for ('0', '2') position
+[board_modifier.py:85]: Setting SW3 footprint position: (85725000, 38100000)
+[key_placer.py:301]: Got ['SW4'] for ('0', '3') position
+[board_modifier.py:85]: Setting SW4 footprint position: (104775000, 38100000)
+[key_placer.py:301]: Got ['SW5'] for ('0', '5') position
+[board_modifier.py:85]: Setting SW5 footprint position: (133350000, 38100000)
+[key_placer.py:301]: Got ['SW6'] for ('0', '6') position
+[board_modifier.py:85]: Setting SW6 footprint position: (152400000, 38100000)
+[key_placer.py:301]: Got ['SW7'] for ('0', '7') position
+[board_modifier.py:85]: Setting SW7 footprint position: (171450000, 38100000)
+[key_placer.py:301]: Got ['SW8'] for ('0', '8') position
+[board_modifier.py:85]: Setting SW8 footprint position: (200025000, 38100000)
+[key_placer.py:301]: Got ['SW9'] for ('0', '9') position
+[board_modifier.py:85]: Setting SW9 footprint position: (219075000, 38100000)
+[key_placer.py:301]: Got ['SW10'] for ('0', '10') position
+[board_modifier.py:85]: Setting SW10 footprint position: (238125000, 38100000)
+[key_placer.py:301]: Got ['SW11'] for ('0', '11') position
+[board_modifier.py:85]: Setting SW11 footprint position: (266700000, 38100000)
+[key_placer.py:301]: Got ['SW12'] for ('1', '0') position
+[board_modifier.py:85]: Setting SW12 footprint position: (42862500, 61912500)
+[key_placer.py:301]: Got ['SW13'] for ('1', '1') position
+[board_modifier.py:85]: Setting SW13 footprint position: (66675000, 61912500)
+[key_placer.py:301]: Got ['SW14'] for ('1', '2') position
+[board_modifier.py:85]: Setting SW14 footprint position: (85725000, 61912500)
+[key_placer.py:301]: Got ['SW15'] for ('1', '3') position
+[board_modifier.py:85]: Setting SW15 footprint position: (104775000, 61912500)
+[key_placer.py:301]: Got ['SW16'] for ('1', '4') position
+[board_modifier.py:85]: Setting SW16 footprint position: (123825000, 61912500)
+[key_placer.py:301]: Got ['SW17'] for ('1', '5') position
+[board_modifier.py:85]: Setting SW17 footprint position: (142875000, 61912500)
+[key_placer.py:301]: Got ['SW18'] for ('1', '6') position
+[board_modifier.py:85]: Setting SW18 footprint position: (161925000, 61912500)
+[key_placer.py:301]: Got ['SW19'] for ('1', '7') position
+[board_modifier.py:85]: Setting SW19 footprint position: (180975000, 61912500)
+[key_placer.py:301]: Got ['SW20'] for ('1', '8') position
+[board_modifier.py:85]: Setting SW20 footprint position: (200025000, 61912500)
+[key_placer.py:301]: Got ['SW21'] for ('1', '9') position
+[board_modifier.py:85]: Setting SW21 footprint position: (219075000, 61912500)
+[key_placer.py:301]: Got ['SW22'] for ('1', '10') position
+[board_modifier.py:85]: Setting SW22 footprint position: (238125000, 61912500)
+[key_placer.py:301]: Got ['SW23'] for ('1', '11') position
+[board_modifier.py:85]: Setting SW23 footprint position: (261937500, 61912500)
+[key_placer.py:301]: Got ['SW24', 'SW24_1'] for ('2', '0') position
+[board_modifier.py:85]: Setting SW24 footprint position: (45243750, 80962500)
+[key_placer.py:301]: Got ['SW25'] for ('2', '1') position
+[board_modifier.py:85]: Setting SW25 footprint position: (71437500, 80962500)
+[key_placer.py:301]: Got ['SW26'] for ('2', '2') position
+[board_modifier.py:85]: Setting SW26 footprint position: (90487500, 80962500)
+[key_placer.py:301]: Got ['SW27'] for ('2', '3') position
+[board_modifier.py:85]: Setting SW27 footprint position: (109537500, 80962500)
+[key_placer.py:301]: Got ['SW28'] for ('2', '4') position
+[board_modifier.py:85]: Setting SW28 footprint position: (128587500, 80962500)
+[key_placer.py:301]: Got ['SW29'] for ('2', '5') position
+[board_modifier.py:85]: Setting SW29 footprint position: (147637500, 80962500)
+[key_placer.py:301]: Got ['SW30'] for ('2', '6') position
+[board_modifier.py:85]: Setting SW30 footprint position: (166687500, 80962500)
+[key_placer.py:301]: Got ['SW31'] for ('2', '7') position
+[board_modifier.py:85]: Setting SW31 footprint position: (185737500, 80962500)
+[key_placer.py:301]: Got ['SW32'] for ('2', '8') position
+[board_modifier.py:85]: Setting SW32 footprint position: (204787500, 80962500)
+[key_placer.py:301]: Got ['SW33'] for ('2', '9') position
+[board_modifier.py:85]: Setting SW33 footprint position: (223837500, 80962500)
+[key_placer.py:301]: Got ['SW34'] for ('2', '10') position
+[board_modifier.py:85]: Setting SW34 footprint position: (242887500, 80962500)
+[key_placer.py:301]: Got ['SW35', 'SW35_1', 'SW35_2'] for ('2', '11') position
+[board_modifier.py:85]: Setting SW35 footprint position: (264318750, 80962500)
+[key_placer.py:301]: Got ['SW36', 'SW36_1'] for ('3', '0') position
+[board_modifier.py:85]: Setting SW36 footprint position: (40481250, 100012500)
+[key_placer.py:301]: Got ['SW37'] for ('3', '1') position
+[board_modifier.py:85]: Setting SW37 footprint position: (61912500, 100012500)
+[key_placer.py:301]: Got ['SW38'] for ('3', '2') position
+[board_modifier.py:85]: Setting SW38 footprint position: (80962500, 100012500)
+[key_placer.py:301]: Got ['SW39'] for ('3', '3') position
+[board_modifier.py:85]: Setting SW39 footprint position: (100012500, 100012500)
+[key_placer.py:301]: Got ['SW40'] for ('3', '4') position
+[board_modifier.py:85]: Setting SW40 footprint position: (119062500, 100012500)
+[key_placer.py:301]: Got ['SW41'] for ('3', '5') position
+[board_modifier.py:85]: Setting SW41 footprint position: (138112500, 100012500)
+[key_placer.py:301]: Got ['SW42'] for ('3', '6') position
+[board_modifier.py:85]: Setting SW42 footprint position: (157162500, 100012500)
+[key_placer.py:301]: Got ['SW43'] for ('3', '7') position
+[board_modifier.py:85]: Setting SW43 footprint position: (176212500, 100012500)
+[key_placer.py:301]: Got ['SW44'] for ('3', '8') position
+[board_modifier.py:85]: Setting SW44 footprint position: (195262500, 100012500)
+[key_placer.py:301]: Got ['SW45'] for ('3', '9') position
+[board_modifier.py:85]: Setting SW45 footprint position: (214312500, 100012500)
+[key_placer.py:301]: Got ['SW46'] for ('3', '10') position
+[board_modifier.py:85]: Setting SW46 footprint position: (233362500, 100012500)
+[key_placer.py:301]: Got ['SW47', 'SW47_1'] for ('3', '11') position
+[board_modifier.py:85]: Setting SW47 footprint position: (259556250, 100012500)
+[key_placer.py:301]: Got ['SW48', 'SW48_1'] for ('4', '0') position
+[board_modifier.py:85]: Setting SW48 footprint position: (42862500, 119062500)
+[key_placer.py:301]: Got ['SW49'] for ('4', '1') position
+[board_modifier.py:85]: Setting SW49 footprint position: (71437500, 119062500)
+[key_placer.py:301]: Got ['SW51'] for ('4', '3') position
+[board_modifier.py:85]: Setting SW51 footprint position: (95250000, 119062500)
+[key_placer.py:301]: Got ['SW52'] for ('4', '5') position
+[board_modifier.py:85]: Setting SW52 footprint position: (130968750, 119062500)
+[key_placer.py:301]: Got ['SW54'] for ('4', '7') position
+[board_modifier.py:85]: Setting SW54 footprint position: (178593750, 119062500)
+[key_placer.py:301]: Got ['SW55'] for ('4', '9') position
+[board_modifier.py:85]: Setting SW55 footprint position: (209550000, 119062500)
+[key_placer.py:301]: Got ['SW56', 'SW56_1'] for ('4', '10') position
+[board_modifier.py:85]: Setting SW56 footprint position: (233362500, 119062500)
+[key_placer.py:301]: Got ['SW57', 'SW57_1'] for ('4', '11') position
+[board_modifier.py:85]: Setting SW57 footprint position: (261937500, 119062500)
+[key_placer.py:301]: Got ['SW35', 'SW35_1', 'SW35_2'] for ('2', '11') position
+[board_modifier.py:85]: Setting SW35_1 footprint position: (264318750, 71437500)
+[key_placer.py:301]: Got ['SW35', 'SW35_1', 'SW35_2'] for ('2', '11') position
+[board_modifier.py:85]: Setting SW35_2 footprint position: (254793750, 80962500)
+[key_placer.py:301]: Got ['SW24', 'SW24_1'] for ('2', '0') position
+[board_modifier.py:85]: Setting SW24_1 footprint position: (40481250, 80962500)
+[key_placer.py:301]: Got ['SW36', 'SW36_1'] for ('3', '0') position
+[board_modifier.py:85]: Setting SW36_1 footprint position: (50006250, 100012500)
+[key_placer.py:301]: Got ['SW47', 'SW47_1'] for ('3', '11') position
+[board_modifier.py:85]: Setting SW47_1 footprint position: (250031250, 100012500)
+[key_placer.py:301]: Got ['SW48', 'SW48_1'] for ('4', '0') position
+[board_modifier.py:85]: Setting SW48_1 footprint position: (40481250, 119062500)
+[key_placer.py:301]: Got ['SW50'] for ('4', '2') position
+[board_modifier.py:85]: Setting SW50 footprint position: (76200000, 119062500)
+[key_placer.py:301]: Got ['SW56', 'SW56_1'] for ('4', '10') position
+[board_modifier.py:85]: Setting SW56_1 footprint position: (228600000, 119062500)
+[key_placer.py:301]: Got ['SW57', 'SW57_1'] for ('4', '11') position
+[board_modifier.py:85]: Setting SW57_1 footprint position: (264318750, 119062500)
+[key_placer.py:301]: Got ['SW53'] for ('4', '6') position
+[board_modifier.py:85]: Setting SW53 footprint position: (152400000, 119062500)
+[key_placer.py:999]: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.DEFAULT: 'Default'>, position=ElementPosition(x=5.08, y=3.03, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+[board_modifier.py:98]: Getting SW1 footprint position: (38100000, 38100000)
+[board_modifier.py:85]: Setting D1 footprint position: (43180000, 41130000)
+[board_modifier.py:98]: Getting SW2 footprint position: (66675000, 38100000)
+[board_modifier.py:85]: Setting D2 footprint position: (71755000, 41130000)
+[board_modifier.py:98]: Getting SW3 footprint position: (85725000, 38100000)
+[board_modifier.py:85]: Setting D3 footprint position: (90805000, 41130000)
+[board_modifier.py:98]: Getting SW4 footprint position: (104775000, 38100000)
+[board_modifier.py:85]: Setting D4 footprint position: (109855000, 41130000)
+[board_modifier.py:98]: Getting SW5 footprint position: (133350000, 38100000)
+[board_modifier.py:85]: Setting D5 footprint position: (138430000, 41130000)
+[board_modifier.py:98]: Getting SW6 footprint position: (152400000, 38100000)
+[board_modifier.py:85]: Setting D6 footprint position: (157480000, 41130000)
+[board_modifier.py:98]: Getting SW7 footprint position: (171450000, 38100000)
+[board_modifier.py:85]: Setting D7 footprint position: (176530000, 41130000)
+[board_modifier.py:98]: Getting SW8 footprint position: (200025000, 38100000)
+[board_modifier.py:85]: Setting D8 footprint position: (205105000, 41130000)
+[board_modifier.py:98]: Getting SW9 footprint position: (219075000, 38100000)
+[board_modifier.py:85]: Setting D9 footprint position: (224155000, 41130000)
+[board_modifier.py:98]: Getting SW10 footprint position: (238125000, 38100000)
+[board_modifier.py:85]: Setting D10 footprint position: (243205000, 41130000)
+[board_modifier.py:98]: Getting SW11 footprint position: (266700000, 38100000)
+[board_modifier.py:85]: Setting D11 footprint position: (271780000, 41130000)
+[board_modifier.py:98]: Getting SW12 footprint position: (42862500, 61912500)
+[board_modifier.py:85]: Setting D12 footprint position: (47942500, 64942500)
+[board_modifier.py:98]: Getting SW13 footprint position: (66675000, 61912500)
+[board_modifier.py:85]: Setting D13 footprint position: (71755000, 64942500)
+[board_modifier.py:98]: Getting SW14 footprint position: (85725000, 61912500)
+[board_modifier.py:85]: Setting D14 footprint position: (90805000, 64942500)
+[board_modifier.py:98]: Getting SW15 footprint position: (104775000, 61912500)
+[board_modifier.py:85]: Setting D15 footprint position: (109855000, 64942500)
+[board_modifier.py:98]: Getting SW16 footprint position: (123825000, 61912500)
+[board_modifier.py:85]: Setting D16 footprint position: (128905000, 64942500)
+[board_modifier.py:98]: Getting SW17 footprint position: (142875000, 61912500)
+[board_modifier.py:85]: Setting D17 footprint position: (147955000, 64942500)
+[board_modifier.py:98]: Getting SW18 footprint position: (161925000, 61912500)
+[board_modifier.py:85]: Setting D18 footprint position: (167005000, 64942500)
+[board_modifier.py:98]: Getting SW19 footprint position: (180975000, 61912500)
+[board_modifier.py:85]: Setting D19 footprint position: (186055000, 64942500)
+[board_modifier.py:98]: Getting SW20 footprint position: (200025000, 61912500)
+[board_modifier.py:85]: Setting D20 footprint position: (205105000, 64942500)
+[board_modifier.py:98]: Getting SW21 footprint position: (219075000, 61912500)
+[board_modifier.py:85]: Setting D21 footprint position: (224155000, 64942500)
+[board_modifier.py:98]: Getting SW22 footprint position: (238125000, 61912500)
+[board_modifier.py:85]: Setting D22 footprint position: (243205000, 64942500)
+[board_modifier.py:98]: Getting SW23 footprint position: (261937500, 61912500)
+[board_modifier.py:85]: Setting D23 footprint position: (267017500, 64942500)
+[board_modifier.py:98]: Getting SW24 footprint position: (45243750, 80962500)
+[board_modifier.py:85]: Setting D24 footprint position: (50323750, 83992500)
+[board_modifier.py:98]: Getting SW24_1 footprint position: (40481250, 80962500)
+[board_modifier.py:98]: Getting SW25 footprint position: (71437500, 80962500)
+[board_modifier.py:85]: Setting D25 footprint position: (76517500, 83992500)
+[board_modifier.py:98]: Getting SW26 footprint position: (90487500, 80962500)
+[board_modifier.py:85]: Setting D26 footprint position: (95567500, 83992500)
+[board_modifier.py:98]: Getting SW27 footprint position: (109537500, 80962500)
+[board_modifier.py:85]: Setting D27 footprint position: (114617500, 83992500)
+[board_modifier.py:98]: Getting SW28 footprint position: (128587500, 80962500)
+[board_modifier.py:85]: Setting D28 footprint position: (133667500, 83992500)
+[board_modifier.py:98]: Getting SW29 footprint position: (147637500, 80962500)
+[board_modifier.py:85]: Setting D29 footprint position: (152717500, 83992500)
+[board_modifier.py:98]: Getting SW30 footprint position: (166687500, 80962500)
+[board_modifier.py:85]: Setting D30 footprint position: (171767500, 83992500)
+[board_modifier.py:98]: Getting SW31 footprint position: (185737500, 80962500)
+[board_modifier.py:85]: Setting D31 footprint position: (190817500, 83992500)
+[board_modifier.py:98]: Getting SW32 footprint position: (204787500, 80962500)
+[board_modifier.py:85]: Setting D32 footprint position: (209867500, 83992500)
+[board_modifier.py:98]: Getting SW33 footprint position: (223837500, 80962500)
+[board_modifier.py:85]: Setting D33 footprint position: (228917500, 83992500)
+[board_modifier.py:98]: Getting SW34 footprint position: (242887500, 80962500)
+[board_modifier.py:85]: Setting D34 footprint position: (247967500, 83992500)
+[board_modifier.py:98]: Getting SW35 footprint position: (264318750, 80962500)
+[board_modifier.py:85]: Setting D35 footprint position: (269398750, 83992500)
+[board_modifier.py:98]: Getting SW35_1 footprint position: (264318750, 71437500)
+[board_modifier.py:98]: Getting SW35_2 footprint position: (254793750, 80962500)
+[board_modifier.py:98]: Getting SW36 footprint position: (40481250, 100012500)
+[board_modifier.py:85]: Setting D36 footprint position: (45561250, 103042500)
+[board_modifier.py:98]: Getting SW36_1 footprint position: (50006250, 100012500)
+[board_modifier.py:98]: Getting SW37 footprint position: (61912500, 100012500)
+[board_modifier.py:85]: Setting D37 footprint position: (66992500, 103042500)
+[board_modifier.py:98]: Getting SW38 footprint position: (80962500, 100012500)
+[board_modifier.py:85]: Setting D38 footprint position: (86042500, 103042500)
+[board_modifier.py:98]: Getting SW39 footprint position: (100012500, 100012500)
+[board_modifier.py:85]: Setting D39 footprint position: (105092500, 103042500)
+[board_modifier.py:98]: Getting SW40 footprint position: (119062500, 100012500)
+[board_modifier.py:85]: Setting D40 footprint position: (124142500, 103042500)
+[board_modifier.py:98]: Getting SW41 footprint position: (138112500, 100012500)
+[board_modifier.py:85]: Setting D41 footprint position: (143192500, 103042500)
+[board_modifier.py:98]: Getting SW42 footprint position: (157162500, 100012500)
+[board_modifier.py:85]: Setting D42 footprint position: (162242500, 103042500)
+[board_modifier.py:98]: Getting SW43 footprint position: (176212500, 100012500)
+[board_modifier.py:85]: Setting D43 footprint position: (181292500, 103042500)
+[board_modifier.py:98]: Getting SW44 footprint position: (195262500, 100012500)
+[board_modifier.py:85]: Setting D44 footprint position: (200342500, 103042500)
+[board_modifier.py:98]: Getting SW45 footprint position: (214312500, 100012500)
+[board_modifier.py:85]: Setting D45 footprint position: (219392500, 103042500)
+[board_modifier.py:98]: Getting SW46 footprint position: (233362500, 100012500)
+[board_modifier.py:85]: Setting D46 footprint position: (238442500, 103042500)
+[board_modifier.py:98]: Getting SW47 footprint position: (259556250, 100012500)
+[board_modifier.py:85]: Setting D47 footprint position: (264636250, 103042500)
+[board_modifier.py:98]: Getting SW47_1 footprint position: (250031250, 100012500)
+[board_modifier.py:98]: Getting SW48 footprint position: (42862500, 119062500)
+[board_modifier.py:85]: Setting D48 footprint position: (47942500, 122092500)
+[board_modifier.py:98]: Getting SW48_1 footprint position: (40481250, 119062500)
+[board_modifier.py:98]: Getting SW49 footprint position: (71437500, 119062500)
+[board_modifier.py:85]: Setting D49 footprint position: (76517500, 122092500)
+[board_modifier.py:98]: Getting SW50 footprint position: (76200000, 119062500)
+[board_modifier.py:85]: Setting D50 footprint position: (81280000, 122092500)
+[board_modifier.py:98]: Getting SW51 footprint position: (95250000, 119062500)
+[board_modifier.py:85]: Setting D51 footprint position: (100330000, 122092500)
+[board_modifier.py:98]: Getting SW52 footprint position: (130968750, 119062500)
+[board_modifier.py:85]: Setting D52 footprint position: (136048750, 122092500)
+[board_modifier.py:98]: Getting SW53 footprint position: (152400000, 119062500)
+[board_modifier.py:85]: Setting D53 footprint position: (157480000, 122092500)
+[board_modifier.py:98]: Getting SW54 footprint position: (178593750, 119062500)
+[board_modifier.py:85]: Setting D54 footprint position: (183673750, 122092500)
+[board_modifier.py:98]: Getting SW55 footprint position: (209550000, 119062500)
+[board_modifier.py:85]: Setting D55 footprint position: (214630000, 122092500)
+[board_modifier.py:98]: Getting SW56 footprint position: (233362500, 119062500)
+[board_modifier.py:85]: Setting D56 footprint position: (238442500, 122092500)
+[board_modifier.py:98]: Getting SW56_1 footprint position: (228600000, 119062500)
+[board_modifier.py:98]: Getting SW57 footprint position: (261937500, 119062500)
+[board_modifier.py:85]: Setting D57 footprint position: (267017500, 122092500)
+[board_modifier.py:98]: Getting SW57_1 footprint position: (264318750, 119062500)
+[key_placer.py:775]: Placing additional elements for SW57_1
+[board_modifier.py:98]: Getting SW57_1 footprint position: (264318750, 119062500)
+[board_modifier.py:75]: Searching for optional ST57_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW57
+[board_modifier.py:98]: Getting SW57 footprint position: (261937500, 119062500)
+[board_modifier.py:75]: Searching for optional ST57 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW56_1
+[board_modifier.py:98]: Getting SW56_1 footprint position: (228600000, 119062500)
+[board_modifier.py:75]: Searching for optional ST56_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW56
+[board_modifier.py:98]: Getting SW56 footprint position: (233362500, 119062500)
+[board_modifier.py:75]: Searching for optional ST56 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW55
+[board_modifier.py:98]: Getting SW55 footprint position: (209550000, 119062500)
+[board_modifier.py:75]: Searching for optional ST55 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW54
+[board_modifier.py:98]: Getting SW54 footprint position: (178593750, 119062500)
+[board_modifier.py:75]: Searching for optional ST54 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW53
+[board_modifier.py:98]: Getting SW53 footprint position: (152400000, 119062500)
+[board_modifier.py:75]: Searching for optional ST53 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW52
+[board_modifier.py:98]: Getting SW52 footprint position: (130968750, 119062500)
+[board_modifier.py:75]: Searching for optional ST52 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW51
+[board_modifier.py:98]: Getting SW51 footprint position: (95250000, 119062500)
+[board_modifier.py:75]: Searching for optional ST51 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW50
+[board_modifier.py:98]: Getting SW50 footprint position: (76200000, 119062500)
+[board_modifier.py:75]: Searching for optional ST50 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW49
+[board_modifier.py:98]: Getting SW49 footprint position: (71437500, 119062500)
+[board_modifier.py:75]: Searching for optional ST49 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW48_1
+[board_modifier.py:98]: Getting SW48_1 footprint position: (40481250, 119062500)
+[board_modifier.py:75]: Searching for optional ST48_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW48
+[board_modifier.py:98]: Getting SW48 footprint position: (42862500, 119062500)
+[board_modifier.py:75]: Searching for optional ST48 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW47_1
+[board_modifier.py:98]: Getting SW47_1 footprint position: (250031250, 100012500)
+[board_modifier.py:75]: Searching for optional ST47_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW47
+[board_modifier.py:98]: Getting SW47 footprint position: (259556250, 100012500)
+[board_modifier.py:75]: Searching for optional ST47 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW46
+[board_modifier.py:98]: Getting SW46 footprint position: (233362500, 100012500)
+[board_modifier.py:75]: Searching for optional ST46 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW45
+[board_modifier.py:98]: Getting SW45 footprint position: (214312500, 100012500)
+[board_modifier.py:75]: Searching for optional ST45 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW44
+[board_modifier.py:98]: Getting SW44 footprint position: (195262500, 100012500)
+[board_modifier.py:75]: Searching for optional ST44 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW43
+[board_modifier.py:98]: Getting SW43 footprint position: (176212500, 100012500)
+[board_modifier.py:75]: Searching for optional ST43 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW42
+[board_modifier.py:98]: Getting SW42 footprint position: (157162500, 100012500)
+[board_modifier.py:75]: Searching for optional ST42 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW41
+[board_modifier.py:98]: Getting SW41 footprint position: (138112500, 100012500)
+[board_modifier.py:75]: Searching for optional ST41 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW40
+[board_modifier.py:98]: Getting SW40 footprint position: (119062500, 100012500)
+[board_modifier.py:75]: Searching for optional ST40 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW39
+[board_modifier.py:98]: Getting SW39 footprint position: (100012500, 100012500)
+[board_modifier.py:75]: Searching for optional ST39 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW38
+[board_modifier.py:98]: Getting SW38 footprint position: (80962500, 100012500)
+[board_modifier.py:75]: Searching for optional ST38 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW37
+[board_modifier.py:98]: Getting SW37 footprint position: (61912500, 100012500)
+[board_modifier.py:75]: Searching for optional ST37 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW36_1
+[board_modifier.py:98]: Getting SW36_1 footprint position: (50006250, 100012500)
+[board_modifier.py:75]: Searching for optional ST36_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW36
+[board_modifier.py:98]: Getting SW36 footprint position: (40481250, 100012500)
+[board_modifier.py:75]: Searching for optional ST36 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW35_2
+[board_modifier.py:98]: Getting SW35_2 footprint position: (254793750, 80962500)
+[board_modifier.py:75]: Searching for optional ST35_2 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW35_1
+[board_modifier.py:98]: Getting SW35_1 footprint position: (264318750, 71437500)
+[board_modifier.py:75]: Searching for optional ST35_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW35
+[board_modifier.py:98]: Getting SW35 footprint position: (264318750, 80962500)
+[board_modifier.py:75]: Searching for optional ST35 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW34
+[board_modifier.py:98]: Getting SW34 footprint position: (242887500, 80962500)
+[board_modifier.py:75]: Searching for optional ST34 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW33
+[board_modifier.py:98]: Getting SW33 footprint position: (223837500, 80962500)
+[board_modifier.py:75]: Searching for optional ST33 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW32
+[board_modifier.py:98]: Getting SW32 footprint position: (204787500, 80962500)
+[board_modifier.py:75]: Searching for optional ST32 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW31
+[board_modifier.py:98]: Getting SW31 footprint position: (185737500, 80962500)
+[board_modifier.py:75]: Searching for optional ST31 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW30
+[board_modifier.py:98]: Getting SW30 footprint position: (166687500, 80962500)
+[board_modifier.py:75]: Searching for optional ST30 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW29
+[board_modifier.py:98]: Getting SW29 footprint position: (147637500, 80962500)
+[board_modifier.py:75]: Searching for optional ST29 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW28
+[board_modifier.py:98]: Getting SW28 footprint position: (128587500, 80962500)
+[board_modifier.py:75]: Searching for optional ST28 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW27
+[board_modifier.py:98]: Getting SW27 footprint position: (109537500, 80962500)
+[board_modifier.py:75]: Searching for optional ST27 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW26
+[board_modifier.py:98]: Getting SW26 footprint position: (90487500, 80962500)
+[board_modifier.py:75]: Searching for optional ST26 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW25
+[board_modifier.py:98]: Getting SW25 footprint position: (71437500, 80962500)
+[board_modifier.py:75]: Searching for optional ST25 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW24_1
+[board_modifier.py:98]: Getting SW24_1 footprint position: (40481250, 80962500)
+[board_modifier.py:75]: Searching for optional ST24_1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW24
+[board_modifier.py:98]: Getting SW24 footprint position: (45243750, 80962500)
+[board_modifier.py:75]: Searching for optional ST24 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW23
+[board_modifier.py:98]: Getting SW23 footprint position: (261937500, 61912500)
+[board_modifier.py:75]: Searching for optional ST23 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW22
+[board_modifier.py:98]: Getting SW22 footprint position: (238125000, 61912500)
+[board_modifier.py:75]: Searching for optional ST22 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW21
+[board_modifier.py:98]: Getting SW21 footprint position: (219075000, 61912500)
+[board_modifier.py:75]: Searching for optional ST21 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW20
+[board_modifier.py:98]: Getting SW20 footprint position: (200025000, 61912500)
+[board_modifier.py:75]: Searching for optional ST20 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW19
+[board_modifier.py:98]: Getting SW19 footprint position: (180975000, 61912500)
+[board_modifier.py:75]: Searching for optional ST19 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW18
+[board_modifier.py:98]: Getting SW18 footprint position: (161925000, 61912500)
+[board_modifier.py:75]: Searching for optional ST18 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW17
+[board_modifier.py:98]: Getting SW17 footprint position: (142875000, 61912500)
+[board_modifier.py:75]: Searching for optional ST17 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW16
+[board_modifier.py:98]: Getting SW16 footprint position: (123825000, 61912500)
+[board_modifier.py:75]: Searching for optional ST16 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW15
+[board_modifier.py:98]: Getting SW15 footprint position: (104775000, 61912500)
+[board_modifier.py:75]: Searching for optional ST15 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW14
+[board_modifier.py:98]: Getting SW14 footprint position: (85725000, 61912500)
+[board_modifier.py:75]: Searching for optional ST14 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW13
+[board_modifier.py:98]: Getting SW13 footprint position: (66675000, 61912500)
+[board_modifier.py:75]: Searching for optional ST13 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW12
+[board_modifier.py:98]: Getting SW12 footprint position: (42862500, 61912500)
+[board_modifier.py:75]: Searching for optional ST12 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW11
+[board_modifier.py:98]: Getting SW11 footprint position: (266700000, 38100000)
+[board_modifier.py:75]: Searching for optional ST11 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW10
+[board_modifier.py:98]: Getting SW10 footprint position: (238125000, 38100000)
+[board_modifier.py:75]: Searching for optional ST10 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW9
+[board_modifier.py:98]: Getting SW9 footprint position: (219075000, 38100000)
+[board_modifier.py:75]: Searching for optional ST9 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW8
+[board_modifier.py:98]: Getting SW8 footprint position: (200025000, 38100000)
+[board_modifier.py:75]: Searching for optional ST8 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW7
+[board_modifier.py:98]: Getting SW7 footprint position: (171450000, 38100000)
+[board_modifier.py:75]: Searching for optional ST7 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW6
+[board_modifier.py:98]: Getting SW6 footprint position: (152400000, 38100000)
+[board_modifier.py:75]: Searching for optional ST6 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW5
+[board_modifier.py:98]: Getting SW5 footprint position: (133350000, 38100000)
+[board_modifier.py:75]: Searching for optional ST5 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW4
+[board_modifier.py:98]: Getting SW4 footprint position: (104775000, 38100000)
+[board_modifier.py:75]: Searching for optional ST4 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW3
+[board_modifier.py:98]: Getting SW3 footprint position: (85725000, 38100000)
+[board_modifier.py:75]: Searching for optional ST3 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW2
+[board_modifier.py:98]: Getting SW2 footprint position: (66675000, 38100000)
+[board_modifier.py:75]: Searching for optional ST2 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:775]: Placing additional elements for SW1
+[board_modifier.py:98]: Getting SW1 footprint position: (38100000, 38100000)
+[board_modifier.py:75]: Searching for optional ST1 footprint in C:/Users/sambu/Documents/GitHub/TKL40/TKL 40/TKL 40/TKL 40.kicad_pcb
+[board_modifier.py:80]: Footprint not found
